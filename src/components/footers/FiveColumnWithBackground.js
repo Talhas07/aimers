@@ -9,7 +9,7 @@ import { ReactComponent as TwitterIcon } from "images/twitter-icon.svg";
 import { ReactComponent as YoutubeIcon } from "images/youtube-icon.svg";
 import { ReactComponent as SvgDecoratorBlob1 } from "images/svg-decorator-blob-9.svg";
 
-const Container = tw.div`relative bg-gold-950 text-gray-100 -mb-8 -mx-8 px-8 py-12 lg:py-16`;
+const Container = tw.div`relative bg-gold-950 text-gray-100 -mb-8 -mx-8 px-8 py-10 lg:py-12`;
 const Content = tw.div`max-w-screen-xl mx-auto relative z-10`;
 const FiveColumns = tw.div`flex flex-wrap text-center sm:text-left justify-center sm:justify-start md:justify-between -mt-12`;
 
@@ -50,7 +50,9 @@ const DecoratorBlob2 = tw(
 export default () => {
   return (
     <Container>
-      <Content style={{ border: "1px solid red" }}>
+      <Content
+      //  style={{ border: "1px solid red" }}
+      >
         {/* <FiveColumns>
           <Column>
             <ColumnHeading>Main</ColumnHeading>
@@ -139,7 +141,9 @@ export default () => {
           </Column>
         </FiveColumns> */}
         {/* <Divider /> */}
-        <ThreeColRow style={{ border: "1px solid red" }}>
+        <ThreeColRow
+        // style={{ border: "1px solid red" }}
+        >
           <LogoContainer>
             <LogoImg
               style={{ backgroundColor: "rgba(255,255,255,0)" }}
