@@ -59,28 +59,32 @@ export default ({ roundedHeaderButton }) => {
             <LeftColumn
             // style={{ border: "" }}
             >
-              <Heading>
-                AIMERS ENTERPRISES <p tw="text-gold-950">Contact Us</p>
-              </Heading>
-
-              <>We look forward to working with you</>
+              <Heading tw="text-4xl">AIMERS ENTERPRISES</Heading>
+              <Heading tw="text-gold-950">Contact Us</Heading>
+              <>--We look forward to working with you--</>
               <br />
               <br />
               <Heading>
-                Phone : <span tw="text-gold-950 font-light ">0300 6017173</span>
+                Phone :{" "}
+                <span tw="text-gold-950 font-light text-lg lg:text-xl   ">
+                  0300 6017173
+                </span>
               </Heading>
               <Heading>
-                Phone : <span tw="text-gold-950 font-light">0301 3881805</span>
+                Phone :{" "}
+                <span tw="text-gold-950 font-light  text-lg lg:text-xl ">
+                  0301 3881805
+                </span>
               </Heading>
               <Heading>
                 Email :{" "}
-                <span tw="text-gold-950 font-light">
+                <span tw="text-gold-950 font-light  text-lg lg:text-xl ">
                   enterprisesaimers@gmail.com
                 </span>
               </Heading>
               <Heading>
                 Address :{" "}
-                <span tw="text-gold-950 font-light">
+                <span tw="text-gold-950 font-light text-lg lg:text-xl ">
                   Manga Chowk Manga Mandi, Lahore
                 </span>
               </Heading>
@@ -112,7 +116,7 @@ export default ({ roundedHeaderButton }) => {
               </IllustrationContainer>
             </RightColumn>
           </TwoColumn>
-          <DecoratorBlob1 tw="min-w-0 w-full max-w-sm xl:max-w-md border-2 border-red-700"></DecoratorBlob1>
+          <DecoratorBlob1 tw="min-w-0 w-full max-w-sm xl:max-w-md "></DecoratorBlob1>
         </Container>
         <Footer />
       </AnimationRevealPage>

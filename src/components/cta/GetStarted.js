@@ -33,11 +33,11 @@ const DecoratorBlob2 = tw(
   SvgDecoratorBlob1
 )`absolute top-0 right-0 w-80 h-80 transform  translate-x-20 -translate-y-64 text-orange-700 opacity-50`;
 export default ({
-  text = "Developers all over the world are happily using Treact.",
+  text = "With hundreds of clients all over Pakistan, we are the best in the business",
   primaryLinkText = "Get Started",
   primaryLinkUrl = "http://timerse.com",
   secondaryLinkText = "Contact Us",
-  secondaryLinkUrl = "http://google.com",
+  secondaryLinkUrl = "/contact",
   pushDownFooter = true,
 }) => {
   return (

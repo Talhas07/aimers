@@ -36,11 +36,11 @@ export default () => {
       />
       <MainFeature
         subheading={<Subheading>Quality Work</Subheading>}
-        imageSrc={heroScreenshotImageSrc}
+        // imageSrc={heroScreenshotImageSrc}
         imageBorder={true}
         imageDecoratorBlob={true}
       />
-      <FeatureWithSteps
+      {/* <FeatureWithSteps
         subheading={<Subheading>STEPS</Subheading>}
         heading={
           <>
@@ -51,8 +51,8 @@ export default () => {
         imageSrc={macHeroScreenshotImageSrc}
         imageDecoratorBlob={true}
         decoratorBlobCss={tw`xl:w-40 xl:h-40 opacity-15 -translate-x-1/2 left-1/2`}
-      />
-      <MainFeature2
+      /> */}
+      {/* <MainFeature2
         subheading={<Subheading>VALUES</Subheading>}
         heading={
           <>
@@ -155,7 +155,7 @@ export default () => {
             customerTitle: "Founder, EventsNYC",
           },
         ]}
-      />
+      /> */}
       <FAQ
         subheading={<Subheading>FAQS</Subheading>}
         heading={
@@ -165,36 +165,37 @@ export default () => {
         }
         faqs={[
           {
-            question: "Are all the templates easily customizable ?",
+            question: "What services does Aimer’s Enterprises offer?",
             answer:
-              "Yes, they all are. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+              "We provide real estate consultancy and development services, including market analysis, project management, investment advisory, and property development for both residential and commercial sectors.",
           },
           {
             question:
-              "How long do you usually support an standalone template for ?",
+              "How does Aimer’s Enterprises approach real estate development?",
             answer:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-          },
-          {
-            question: "What kind of payment methods do you accept ?",
-            answer:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+              "We focus on collaboration, innovation, and quality. Our team works closely with clients to ensure projects align with their vision and use sustainable building practices to benefit the community.",
           },
           {
             question:
-              "Is there a subscribption service to get the latest templates ?",
+              "Can Aimer’s Enterprises help me with real estate investments?",
             answer:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+              "Yes, we offer tailored investment advisory services, helping clients maximize returns through careful market analysis, asset selection, and portfolio management.",
           },
           {
-            question: "Are the templates compatible with the React ?",
+            question: "What types of projects does Aimer’s Enterprises handle?",
             answer:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+              "We specialize in residential, commercial, sustainable, and redevelopment projects, providing solutions that meet the needs of diverse communities and businesses.",
           },
           {
-            question: "Do you really support Internet Explorer 11 ?",
+            question:
+              "How does Aimer’s Enterprises ensure successful projects?",
             answer:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+              "We oversee the entire development process, ensuring projects are completed on time, within budget, and to high standards of quality.",
+          },
+          {
+            question: "How can I contact Aimer’s Enterprises?",
+            answer:
+              "You can call us at 0300 6017173 or 0301 3881805, email us at enterprisesaimers@gmail.com, or visit our office at Manga Chowk, Manga Mandi, Lahore.",
           },
         ]}
       />

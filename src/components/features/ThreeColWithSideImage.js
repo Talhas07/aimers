@@ -65,7 +65,7 @@ export default ({
   cards = null,
   heading = "Amazing Features",
   subheading = "Features",
-  description = "To be the leading provider of innovative andcomprehensive consultancy and development solutions in the real estate sector, empowering clients to achieve their goals and build sustainable communities.",
+  description = "Our vision is to redefine the real estate landscape by delivering forward-thinking solutions that set new benchmarks in the industry. ",
 }) => {
   /*
    * This componets has an array of object denoting the cards defined below. Each object in the cards array can have the key (Change it according to your need, you can also add more objects to have more cards in this feature component) or you can directly pass this using the cards prop:
@@ -77,16 +77,27 @@ export default ({
 
   const defaultCards = [
     {
+      imageSrc: ReliableIconImage,
+      title: "Reliable",
+      description:
+        "We ensure that every project we undertake is delivered with consistency, transparency, and dependable results. From consultancy to development, you can count on us.",
+    },
+    {
+      imageSrc: FastIconImage,
+      title: "Fast",
+      description:
+        "We understand the importance of time in the real estate industry. Our team works efficiently to complete projects on schedule without compromising quality.",
+    },
+    {
       imageSrc: ShieldIconImage,
       title: "Secure",
       description:
-        "We strictly only deal with vendors that provide top notch security.",
+        "We strictly only deal with vendors that provide top notch security. We take every measure to protect your investments, data, and assets, ensuring that all projects are handled with the utmost care.",
     },
-    { imageSrc: SupportIconImage, title: "24/7 Support" },
-    { imageSrc: CustomizeIconImage, title: "Customizable" },
-    { imageSrc: ReliableIconImage, title: "Reliable" },
-    { imageSrc: FastIconImage, title: "Fast" },
-    { imageSrc: SimpleIconImage, title: "Easy" },
+    // { imageSrc: SupportIconImage, title: "24/7 Support" },
+    // { imageSrc: CustomizeIconImage, title: "Customizable" },
+
+    // { imageSrc: SimpleIconImage, title: "Easy" },
   ];
 
   if (!cards) cards = defaultCards;

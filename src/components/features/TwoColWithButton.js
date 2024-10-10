@@ -7,13 +7,13 @@ import {
   Subheading as SubheadingBase,
 } from "components/misc/Headings.js";
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
-import TeamIllustrationSrc from "images/team-illustration-2.svg";
+import TeamIllustrationSrc from "images/building.png";
 import { ReactComponent as SvgDotPattern } from "images/dot-pattern.svg";
 
 const Container = tw.div`relative`;
 const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto py-20 md:py-24 items-center`;
 const Column = tw.div`w-full max-w-md mx-auto md:max-w-none md:mx-0`;
-const ImageColumn = tw(Column)`md:w-6/12 flex-shrink-0 relative`;
+const ImageColumn = tw(Column)`md:w-5/12 flex-shrink-0 relative`;
 const TextColumn = styled(Column)((props) => [
   tw`md:w-6/12 mt-16 md:mt-0`,
   props.textOnLeft
@@ -48,10 +48,11 @@ export default ({
   subheading = "Our Expertise",
   heading = (
     <>
-      Designed & Developed by <span tw="text-gold-950">Professionals.</span>
+      Get your designs Developed by{" "}
+      <span tw="text-gold-950">Professionals.</span>
     </>
   ),
-  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  description = "Bring Your Vision to Life with Aimer's – Where Expert Designs Meet Your Dreams! Let Aimer's Enterprises transform your ideas into stunning realities with professional, tailored designs that stand out and exceed expectations.",
   primaryButtonText = "Learn More",
   primaryButtonUrl = "https://timerse.com",
   imageSrc = TeamIllustrationSrc,
