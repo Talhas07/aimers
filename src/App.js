@@ -105,8 +105,9 @@ import ComponentRenderer from "ComponentRenderer.js";
 import ThankYouPage from "ThankYouPage.js";
 import SaaSProductLandingPage from "demos/SaaSProductLandingPage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import services from "demos/services";
+import Contacts from "demos/Contact";
 import Services from "demos/services";
+import Contact from "demos/Contact";
 export default function App() {
   // If you want to disable the animation just use the disabled `prop` like below on your page's component
   // return <AnimationRevealPage disabled>xxxxxxxxxx</AnimationRevealPage>;
@@ -125,6 +126,7 @@ export default function App() {
             element={<ComponentRenderer />}
           />
           <Route path="/services" element={<Services />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/thank-you" element={<ThankYouPage />} />
           <Route path="/" element={<SaaSProductLandingPage />} />
         </Routes>

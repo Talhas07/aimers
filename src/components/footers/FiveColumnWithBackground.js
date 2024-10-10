@@ -3,13 +3,13 @@ import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
 
-import LogoImage from "images/logo-light.svg";
+import LogoImage from "images/aimers.png";
 import { ReactComponent as FacebookIcon } from "images/facebook-icon.svg";
 import { ReactComponent as TwitterIcon } from "images/twitter-icon.svg";
 import { ReactComponent as YoutubeIcon } from "images/youtube-icon.svg";
 import { ReactComponent as SvgDecoratorBlob1 } from "images/svg-decorator-blob-9.svg";
 
-const Container = tw.div`relative bg-gold-950 text-gray-100 -mb-8 -mx-8 px-8 py-20 lg:py-24`;
+const Container = tw.div`relative bg-gold-950 text-gray-100 -mb-8 -mx-8 px-8 py-12 lg:py-16`;
 const Content = tw.div`max-w-screen-xl mx-auto relative z-10`;
 const FiveColumns = tw.div`flex flex-wrap text-center sm:text-left justify-center sm:justify-start md:justify-between -mt-12`;
 
@@ -26,7 +26,7 @@ const Divider = tw.div`my-16 border-b-2 border-orange-400 w-full`;
 const ThreeColRow = tw.div`flex flex-col md:flex-row items-center justify-between`;
 
 const LogoContainer = tw.div`flex items-center justify-center md:justify-start`;
-const LogoImg = tw.img`w-8`;
+const LogoImg = tw.img`w-20 bg-black`;
 const LogoText = tw.h5`ml-2 text-xl font-black tracking-wider text-gray-100`;
 
 const CopywrightNotice = tw.p`text-center text-sm sm:text-base mt-8 md:mt-0 font-medium text-gray-400`;
@@ -50,8 +50,8 @@ const DecoratorBlob2 = tw(
 export default () => {
   return (
     <Container>
-      <Content>
-        <FiveColumns>
+      <Content style={{ border: "1px solid red" }}>
+        {/* <FiveColumns>
           <Column>
             <ColumnHeading>Main</ColumnHeading>
             <LinkList>
@@ -137,15 +137,18 @@ export default () => {
               </LinkListItem>
             </LinkList>
           </Column>
-        </FiveColumns>
-        <Divider />
-        <ThreeColRow>
+        </FiveColumns> */}
+        {/* <Divider /> */}
+        <ThreeColRow style={{ border: "1px solid red" }}>
           <LogoContainer>
-            <LogoImg src={LogoImage} />
-            <LogoText>Treact Inc.</LogoText>
+            <LogoImg
+              style={{ backgroundColor: "rgba(255,255,255,0)" }}
+              src={LogoImage}
+            />
+            <LogoText>AIMERS</LogoText>
           </LogoContainer>
           <CopywrightNotice>
-            &copy; 2018 Treact Inc. All Rights Reserved.
+            &copy; 2024 AIMER`S ENTERPRISES All Rights Reserved.
           </CopywrightNotice>
           <SocialLinksContainer>
             <SocialLink href="https://facebook.com">

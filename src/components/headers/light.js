@@ -78,11 +78,11 @@ export default ({
    */
   const defaultLinks = [
     <NavLinks key={1}>
-      <NavLink onClick={() => scrollByDistance(600)}>Home</NavLink>
+      <NavLink href="/">Home</NavLink>
       <NavLink href="/#">About</NavLink>
-      <NavLink href="/#">Services</NavLink>
+      <NavLink href="/services">Services</NavLink>
       <NavLink href="/#">Strategy</NavLink>
-      <NavLink href="/#">Contact Us</NavLink>
+      <NavLink href="/contact">Contact Us</NavLink>
       {/* <NavLink href="/#" tw="lg:ml-12!">
         Login
       </NavLink> */}
@@ -106,18 +106,7 @@ export default ({
   logoLink = logoLink || defaultLogoLink;
   links = links || defaultLinks;
   ////////////////////////////
-  const scrollByDistance = (distance) => {
-    console.log("helloworld");
-    const currentScrollY = window.scrollY;
-    console.log(`Scrolling by ${distance}px`);
-    console.log(`Current Scroll Position: ${currentScrollY}px`);
-    window.scrollBy({
-      top: distance,
-      left: 0,
-      behavior: "smooth",
-    });
-    console.log(`New Scroll Position: ${currentScrollY}px`);
-  };
+
   /////////////////////////
   return (
     <Header className={className || "header-light"}>

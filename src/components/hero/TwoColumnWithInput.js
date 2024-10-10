@@ -10,16 +10,16 @@ import { ReactComponent as SvgDecoratorBlob1 } from "../../images/svg-decorator-
 import DesignIllustration from "../../images/Aimers1.png";
 import CustomersLogoStripImage from "../../images/customers-logo-strip.png";
 
-const Container = tw.div`relative`;
-const TwoColumn = tw.div`flex flex-col lg:flex-row lg:items-center max-w-screen-xl mx-auto py-20 md:py-24`;
-const LeftColumn = tw.div`relative lg:w-5/12 text-center max-w-lg mx-auto lg:max-w-none lg:text-left`;
+const Container = tw.div`relative `;
+const TwoColumn = tw.div`flex flex-col lg:flex-row lg:items-center max-w-screen-xl mx-auto py-20 md:py-20 md:px-10`;
+const LeftColumn = tw.div`relative  lg:w-6/12 text-center max-w-lg mx-auto lg:max-w-none lg:text-left`;
 const RightColumn = tw.div`relative mt-12 lg:mt-0 flex-1 flex flex-col justify-center lg:self-end`;
 
-const Heading = tw.h1`font-bold text-3xl md:text-3xl lg:text-4xl xl:text-5xl text-gray-900 leading-tight`;
+const Heading = tw.h1`font-bold text-3xl md:text-3xl lg:text-3xl xl:text-4xl text-gray-900 leading-tight`;
 const Paragraph = tw.p`my-5 lg:my-8 text-base xl:text-lg`;
 
 const Actions = styled.div`
-  ${tw`relative max-w-md text-center mx-auto lg:mx-0`}
+  ${tw`relative max-w-md text-center mx-auto lg:mx-0   `}
   input {
     ${tw`sm:pr-48 pl-8 py-4 sm:py-5 rounded-full border-2 w-full font-medium focus:outline-none transition duration-300  focus:border-gold-950 hover:border-gray-500`}
   }
@@ -28,7 +28,7 @@ const Actions = styled.div`
   }
 `;
 
-const IllustrationContainer = tw.div`flex justify-center lg:justify-end items-center`;
+const IllustrationContainer = tw.div`flex justify-center lg:justify-end items-center `;
 
 // Random Decorator Blobs (shapes that you see in background)
 const DecoratorBlob1 = styled(SvgDecoratorBlob1)`
@@ -49,40 +49,47 @@ export default ({ roundedHeaderButton }) => {
   return (
     <>
       {/* <Header roundedHeaderButton={roundedHeaderButton} /> */}
-      {/* <Container> */}
-      <TwoColumn>
-        <LeftColumn>
-          <Heading>
-            WELCOME TO OUR COMPANY <span tw="text-gold-950">AIMERS</span>
-          </Heading>
-          <Paragraph>
-            We Specialize in Delivering Top-Tier Consultancy Services for Real
-            Estate Projects, Alongside Our Expertise as Developers in The Real
-            Estate Sector. Our Dual Approach Enables Us to Offer Comprehensive
-            Solutions Tailored to Meet the Diverse Needs of Our Clients, Whether
-            They Are Looking to Invest, Develop, Or Manage Properties.
-          </Paragraph>
-          <Actions>
-            <input type="text" placeholder="Your E-mail Address" />
-            <button>Get Started</button>
-          </Actions>
-          <CustomersLogoStrip>
-            <p>Our TRUSTED Customers</p>
-            <img src={CustomersLogoStripImage} alt="Our Customers" />
-          </CustomersLogoStrip>
-        </LeftColumn>
-        <RightColumn>
-          <IllustrationContainer>
-            <img
-              tw="min-w-0 w-full max-w-sm xl:max-w-lg"
-              src={DesignIllustration}
-              alt="Design Illustration"
-            />
-          </IllustrationContainer>
-        </RightColumn>
-      </TwoColumn>
-      <DecoratorBlob1 />
-      {/* </Container> */}
+      <Container>
+        <TwoColumn
+        // style={{ border: "5px solid red" }}
+        >
+          <LeftColumn
+          // style={{ border: "" }}
+          >
+            <Heading>
+              WELCOME TO OUR COMPANY{" "}
+              <p tw="text-gold-950">AIMERS ENTERPRISES</p>
+            </Heading>
+            <Paragraph>
+              We Specialize in Delivering Top-Tier Consultancy Services for Real
+              Estate Projects, Alongside Our Expertise as Developers in The Real
+              Estate Sector. Our Dual Approach Enables Us to Offer Comprehensive
+              Solutions Tailored to Meet the Diverse Needs of Our Clients,
+              Whether They Are Looking to Invest, Develop, Or Manage Properties.
+            </Paragraph>
+            <Actions>
+              <input type="text" placeholder="Your E-mail Address" />
+              <button>Get Started</button>
+            </Actions>
+            <CustomersLogoStrip
+            // style={{ border: "1px solid red" }}
+            >
+              <p>Our TRUSTED Customers</p>
+              <img src={CustomersLogoStripImage} alt="Our Customers" />
+            </CustomersLogoStrip>
+          </LeftColumn>
+          <RightColumn>
+            <IllustrationContainer>
+              <img
+                tw="min-w-0 w-full max-w-sm xl:max-w-md "
+                src={DesignIllustration}
+                alt="Design Illustration"
+              />
+            </IllustrationContainer>
+          </RightColumn>
+        </TwoColumn>
+        <DecoratorBlob1 tw="min-w-0 w-full max-w-sm xl:max-w-md"></DecoratorBlob1>
+      </Container>
     </>
   );
 };

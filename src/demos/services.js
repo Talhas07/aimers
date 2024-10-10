@@ -10,7 +10,7 @@ import {
 import { SectionDescription } from "components/misc/Typography.js";
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import defaultCardImage from "images/shield-icon.svg";
-
+import Footer from "components/footers/FiveColumnWithBackground.js";
 import { ReactComponent as SvgDecoratorBlob3 } from "images/svg-decorator-blob-3.svg";
 
 import SupportIconImage from "images/support-icon.svg";
@@ -23,7 +23,7 @@ import Header from "../components/headers/light.js";
 const Container = tw.div`relative`;
 
 const ThreeColumnContainer = styled.div`
-  ${tw`flex flex-col items-center md:items-stretch md:flex-row flex-wrap md:justify-center max-w-screen-lg mx-auto py-20 md:py-24`}
+  ${tw`flex  flex-col items-center md:items-stretch md:flex-row flex-wrap md:justify-center max-w-screen-lg mx-auto py-20 md:py-24`}
 `;
 const Subheading = tw(SubheadingBase)`mb-4`;
 const Heading = tw(SectionHeading)`w-full`;
@@ -32,7 +32,7 @@ const Description = tw(SectionDescription)`w-full text-center`;
 const VerticalSpacer = tw.div`mt-10 w-full`;
 
 const Column = styled.div`
-  ${tw`md:w-1/2 lg:w-1/3 max-w-sm`}
+  ${tw`md:w-1/2 lg:w-1/2 max-w-sm mx-8`}
 `;
 
 const Card = styled.div`
@@ -155,14 +155,44 @@ export default ({
                   <span className="imageContainer">
                     {/* <img src={card.imageSrc || defaultCardImage} alt="" />
                      */}
-                    <span
-                      style={{
-                        color: "#CFAA5B",
-                        fontFamily: "Sans-serif",
-                        fontWeight: "bold",
-                        fontSize: "30px",
-                      }}
-                    >
+                    <span tw="font-bold text-2xl sm:text-2xl my-1 text-gold-800">
+                      {card.number}
+                    </span>
+                  </span>
+                  <span className="textContainer">
+                    <span className="title">
+                      {card.title || "Fully Secure"}
+                    </span>
+                    <p className="description">
+                      {card.description ||
+                        "To be the leading provider of innovative and comprehensive consultancy and development solutions in the real estate sector, empowering clients to achieve their goals and build sustainable communities."}
+                    </p>
+                  </span>
+                </Card>
+              </Column>
+            ))}
+          </ThreeColumnContainer>
+          <br />
+          <hr
+            style={{
+              width: "100%",
+
+              color: "black",
+            }}
+          ></hr>
+          <br />
+          <ThreeColumnContainer>
+            {/* {subheading && <Subheading>{subheading}</Subheading>} */}
+            <Heading>DEVELOPMENT SERVICES</Heading>
+            {/* {description && <Description>{description}</Description>} */}
+            <VerticalSpacer />
+            {cards2.map((card, i) => (
+              <Column key={i}>
+                <Card>
+                  <span className="imageContainer">
+                    {/* <img src={card.imageSrc || defaultCardImage} alt="" />
+                     */}
+                    <span tw="font-bold text-2xl sm:text-2xl my-1 text-gold-800">
                       {card.number}
                     </span>
                   </span>
@@ -181,6 +211,7 @@ export default ({
           </ThreeColumnContainer>
           <DecoratorBlob />
         </Container>
+        <Footer />
       </AnimationRevealPage>
     </>
   );
