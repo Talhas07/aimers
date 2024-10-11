@@ -128,7 +128,7 @@ export default () => {
         ]}
       />*/}
       {/* <Test /> */}
-      <Testimonial
+      {/* <Testimonial
         subheading={<Subheading>Testimonials</Subheading>}
         heading={
           <>
@@ -157,7 +157,7 @@ export default () => {
             customerTitle: "Founder, EventsNYC",
           },
         ]}
-      />
+      /> */}
       <FAQ
         subheading={<Subheading>FAQS</Subheading>}
         heading={

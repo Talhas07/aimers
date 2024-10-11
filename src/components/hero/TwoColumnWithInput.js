@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
+import { useNavigate } from "react-router-dom";
 //eslint-disable-next-line
 import { css } from "styled-components/macro";
 
@@ -46,6 +47,10 @@ const CustomersLogoStrip = styled.div`
 `;
 
 export default ({ roundedHeaderButton }) => {
+  const navigate = useNavigate();
+  const navigateTo = () => {
+    navigate("/contact");
+  };
   return (
     <>
       {/* <Header roundedHeaderButton={roundedHeaderButton} /> */}
@@ -69,13 +74,19 @@ export default ({ roundedHeaderButton }) => {
             </Paragraph>
             <Actions>
               <input type="text" placeholder="Your E-mail Address" />
-              <button>Get Started</button>
+              <button onClick={navigateTo}>Get Started</button>
             </Actions>
             <CustomersLogoStrip
             // style={{ border: "1px solid red" }}
             >
-              <p>Our TRUSTED Customers</p>
-              <img src={CustomersLogoStripImage} alt="Our Customers" />
+              <p style={{ fontSize: "1.25rem ", color: "rgb(21, 23, 24)" }}>
+                CEO
+              </p>
+              <Heading tw="">Chodhary Fahad Ahmad Amjad</Heading>
+              <Heading tw="text-gold-950 font-light text-lg lg:text-xl ">
+                Civil Engineer & Advocate
+              </Heading>
+              {/* <img src={CustomersLogoStripImage} alt="Our Customers" /> */}
             </CustomersLogoStrip>
           </LeftColumn>
           <RightColumn>
