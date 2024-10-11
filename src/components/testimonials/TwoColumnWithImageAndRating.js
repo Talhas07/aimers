@@ -18,7 +18,7 @@ const Row = tw.div`flex flex-col md:flex-row justify-between items-center`;
 const Column = tw.div`w-full max-w-md mx-auto md:max-w-none md:mx-0`;
 const ImageColumn = tw(Column)`md:w-5/12 xl:w-6/12 flex-shrink-0 relative`;
 const TextColumn = styled(Column)((props) => [
-  tw`md:w-7/12 xl:w-6/12 mt-16 md:mt-0`,
+  tw`w-full mt-16 md:mt-0`,
   props.textOnLeft
     ? tw`md:pr-12 lg:pr-16 md:order-first`
     : tw`md:pl-12 lg:pl-16 md:order-last`,
@@ -46,7 +46,7 @@ const TestimonialSlider = styled(Slider)`
   }
 `;
 
-const Testimonial = tw.div`outline-none h-full flex! flex-col`;
+const Testimonial = tw.div`outline-none h-full flex! flex-col border-2 border-red-700`;
 const StarsContainer = styled.div``;
 const StarIcon = tw(
   StarIconBase
@@ -110,17 +110,17 @@ export default ({
   const [sliderRef, setSliderRef] = useState(null);
 
   return (
-    <Container>
+    <Container tw="border-2 border-red-700">
       <ContentWithPaddingXl>
         <Row>
-          <ImageColumn>
+          {/* <ImageColumn>
             <Image
               src={imageSrc}
               imageBorder={imageBorder}
               imageShadow={imageShadow}
               imageRounded={imageRounded}
             />
-          </ImageColumn>
+          </ImageColumn> */}
           <TextColumn textOnLeft={textOnLeft}>
             <Subheading>{subheading}</Subheading>
             <Heading>{heading}</Heading>
