@@ -79,8 +79,8 @@ export default () => {
             iconContainerCss: tw`bg-red-300 text-red-800`,
           },
         ]}
-      />
-      <Pricing
+      /> */}
+      {/*<Pricing
         subheading={<Subheading>Pricing</Subheading>}
         heading={
           <>

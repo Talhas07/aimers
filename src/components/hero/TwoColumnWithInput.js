@@ -65,6 +65,15 @@ export default ({ roundedHeaderButton }) => {
               WELCOME TO OUR COMPANY{" "}
               <p tw="text-gold-950">AIMERS ENTERPRISES</p>
             </Heading>
+            <p
+              style={{
+                fontSize: "1.25rem ",
+                color: "rgb(21, 23, 24)",
+                fontWeight: "bold",
+              }}
+            >
+              BUILDER’S AND DEVELOPING CONSULTANTS
+            </p>
             <Paragraph>
               We Specialize in Delivering Top-Tier Consultancy Services for Real
               Estate Projects, Alongside Our Expertise as Developers in The Real
@@ -79,7 +88,12 @@ export default ({ roundedHeaderButton }) => {
             <CustomersLogoStrip
             // style={{ border: "1px solid red" }}
             >
-              <p style={{ fontSize: "1.25rem ", color: "rgb(21, 23, 24)" }}>
+              <p
+                style={{
+                  fontSize: "1.25rem ",
+                  color: "rgb(21, 23, 24)",
+                }}
+              >
                 CEO
               </p>
               <Heading tw="">Chodhary Fahad Ahmad Amjad</Heading>

@@ -108,7 +108,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Contacts from "demos/Contact";
 import Services from "demos/services";
 import Contact from "demos/Contact";
-import Portfolio from "demos/TwoColumnWithImageAndRating";
+import About from "demos/about";
+import Career from "demos/career";
+import Portfolio from "demos/portfolio";
 export default function App() {
   // If you want to disable the animation just use the disabled `prop` like below on your page's component
   // return <AnimationRevealPage disabled>xxxxxxxxxx</AnimationRevealPage>;
@@ -128,6 +130,8 @@ export default function App() {
           />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/career" element={<Career />} />
           <Route path="/thank-you" element={<ThankYouPage />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/" element={<SaaSProductLandingPage />} />

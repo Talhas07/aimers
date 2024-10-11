@@ -35,7 +35,7 @@ const DecoratorBlob2 = tw(
 export default ({
   text = "With hundreds of clients all over Pakistan, we are the best in the business",
   primaryLinkText = "Get Started",
-  primaryLinkUrl = "http://timerse.com",
+  primaryLinkUrl = "/about",
   secondaryLinkText = "Contact Us",
   secondaryLinkUrl = "/contact",
   pushDownFooter = true,
