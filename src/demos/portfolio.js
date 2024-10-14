@@ -137,7 +137,7 @@ export default ({
                   </ControlButton>
                 </Controls>
                 <TestimonialSlider {...settings} ref={setSliderRef}>
-                  {[...Array(27)].map((_, i) => (
+                  {[...Array(26)].map((_, i) => (
                     <RightColumn>
                       {/* <div style={{ border: "2px solid red" }}>hello</div> */}
                       <Image

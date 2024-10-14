@@ -96,7 +96,7 @@ export default ({ roundedHeaderButton }) => {
               >
                 CEO
               </p>
-              <Heading tw="">Chodhary Fahad Ahmad Amjad</Heading>
+              <Heading tw="">CHAUDHARY FAHAD AHMAD AMJAD</Heading>
               <Heading tw="text-gold-950 font-light text-lg lg:text-xl ">
                 Civil Engineer & Advocate
               </Heading>
