@@ -52,9 +52,32 @@ export default ({
       <span tw="text-gold-950">Professionals.</span>
     </>
   ),
-  description = "Bring Your Vision to Life with Aimer's – Where Expert Designs Meet Your Dreams! Let Aimer's Enterprises transform your ideas into stunning realities with professional, tailored designs that stand out and exceed expectations.",
+  description = (
+    <>
+      Bring Your Vision to Life with Aimer's – Where Expert Designs Meet Your
+      Dreams! Let Aimer's Enterprises transform your ideas into stunning
+      realities with professional, tailored designs that stand out and exceed
+      expectations.contact us for the services:
+      <br></br>
+      <br></br>
+      <ul
+        style={{
+          listStyleType: "square",
+          textAlign: "centre",
+          fontWeight: "bold",
+          listStylePosition: "inside",
+        }}
+      >
+        <li>Construction Work</li>
+        <li>Designing Work</li>
+        <li>Constantly Service</li>
+        <li>Real estate investment guidance</li>
+        <li>Project based investment for investors</li>
+      </ul>
+    </>
+  ),
   primaryButtonText = "Learn More",
-  primaryButtonUrl = "https://timerse.com",
+  primaryButtonUrl = "/contact",
   imageSrc = TeamIllustrationSrc,
   buttonRounded = true,
   imageRounded = true,

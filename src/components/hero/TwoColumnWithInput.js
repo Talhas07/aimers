@@ -63,7 +63,7 @@ export default ({ roundedHeaderButton }) => {
           >
             <Heading>
               WELCOME TO OUR COMPANY{" "}
-              <p tw="text-gold-950">AIMERS ENTERPRISES</p>
+              <p tw="text-gold-950">AIMER`S ENTERPRISES</p>
             </Heading>
             <p
               style={{

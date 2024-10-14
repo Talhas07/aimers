@@ -149,7 +149,7 @@ export default () => {
               style={{ backgroundColor: "rgba(255,255,255,0)" }}
               src={LogoImage}
             />
-            <LogoText>AIMERS</LogoText>
+            <LogoText>AIMER`S</LogoText>
           </LogoContainer>
           <CopywrightNotice>
             &copy; 2024 AIMER`S ENTERPRISES All Rights Reserved.

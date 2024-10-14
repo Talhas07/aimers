@@ -59,7 +59,7 @@ export default ({ roundedHeaderButton }) => {
             <LeftColumn
             // style={{ border: "" }}
             >
-              <Heading tw="text-4xl">AIMERS ENTERPRISES</Heading>
+              <Heading tw="text-4xl">AIMER`S ENTERPRISES</Heading>
               <Heading tw="text-gold-950">Contact Us</Heading>
               <>--We look forward to working with you--</>
               <br />
@@ -73,7 +73,7 @@ export default ({ roundedHeaderButton }) => {
               <Heading>
                 Phone :{" "}
                 <span tw="text-gold-950 font-light  text-lg lg:text-xl ">
-                  0301 3881805
+                  0304 0523458
                 </span>
               </Heading>
               <Heading>
