@@ -81,27 +81,32 @@ export default ({ roundedHeaderButton }) => {
               Solutions Tailored to Meet the Diverse Needs of Our Clients,
               Whether They Are Looking to Invest, Develop, Or Manage Properties.
             </Paragraph>
-            <Actions>
+            {/* <Actions>
               <input type="text" placeholder="Your E-mail Address" />
               <button onClick={navigateTo}>Get Started</button>
-            </Actions>
-            <CustomersLogoStrip
-            // style={{ border: "1px solid red" }}
+            </Actions> */}
+            {/* <CustomersLogoStrip */}
+            {/* // style={{ border: "1px solid red" }} */}
+            <hr></hr>
+            <br></br>
+            <p
+              style={{
+                fontSize: "1.75rem ",
+                color: "rgb(21, 23, 24)",
+              }}
             >
-              <p
-                style={{
-                  fontSize: "1.25rem ",
-                  color: "rgb(21, 23, 24)",
-                }}
-              >
-                CEO
-              </p>
-              <Heading tw="">CHAUDHARY FAHAD AHMAD AMJAD</Heading>
-              <Heading tw="text-gold-950 font-light text-lg lg:text-xl ">
-                Civil Engineer & Advocate
-              </Heading>
-              {/* <img src={CustomersLogoStripImage} alt="Our Customers" /> */}
-            </CustomersLogoStrip>
+              CEO
+            </p>
+            <Heading tw="text-3xl sm:text-4xl font-black tracking-wide ">
+              CHAUDHARY FAHAD AHMAD AMJAD
+            </Heading>
+            <Heading tw=" font-bold text-gold-950  text-xl lg:text-2xl ">
+              Civil Engineer & Advocate
+            </Heading>
+            <br></br>
+            <hr></hr>
+            {/* <img src={CustomersLogoStripImage} alt="Our Customers" /> */}
+            {/* </CustomersLogoStrip> */}
           </LeftColumn>
           <RightColumn>
             <IllustrationContainer>
