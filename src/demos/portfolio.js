@@ -19,7 +19,7 @@ const Heading = tw(
 )`mt-4 font-black text-left text-xl sm:text-3xl lg:text-4xl text-center md:text-left leading-tight`;
 const Description = tw.p`mt-6 text-center md:text-left text-sm md:text-base lg:text-lg font-medium leading-relaxed text-secondary-100`;
 
-const imageCount = 66;
+const imageCount = 95;
 const images = Array.from(
   { length: imageCount },
   (_, index) => `/fahadweb/${index + 1}.jpg`

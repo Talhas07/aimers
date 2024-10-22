@@ -70,7 +70,7 @@ export default ({
       >
         <li>Construction Work</li>
         <li>Designing Work</li>
-        <li>Constantly Service</li>
+        <li>Consultant Services</li>
         <li>Real estate investment guidance</li>
         <li>Project based investment for investors</li>
       </ul>

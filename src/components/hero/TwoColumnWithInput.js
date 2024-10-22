@@ -89,19 +89,25 @@ export default ({ roundedHeaderButton }) => {
             {/* // style={{ border: "1px solid red" }} */}
             <hr></hr>
             <br></br>
-            <p
+            {/* <p
               style={{
                 fontSize: "1.75rem ",
                 color: "rgb(21, 23, 24)",
               }}
             >
               CEO
-            </p>
-            <Heading tw="text-3xl sm:text-4xl font-black tracking-wide ">
+            </p> */}
+            <Heading tw="text-2xl sm:text-4xl font-black tracking-wide ">
+              CEO
+            </Heading>
+            <Heading tw="text-2xl sm:text-4xl font-black tracking-wide ">
               CHAUDHARY FAHAD AHMAD AMJAD
             </Heading>
             <Heading tw=" font-bold text-gold-950  text-xl lg:text-2xl ">
-              Civil Engineer & Advocate
+              Civil Engineer <span tw="font-thin">(Registered from PEC)</span>
+            </Heading>
+            <Heading tw=" font-bold text-gold-950  text-xl lg:text-2xl ">
+              Advocate <span tw="font-thin">(Member Bar Council)</span>
             </Heading>
             <br></br>
             <hr></hr>
